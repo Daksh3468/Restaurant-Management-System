@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100vh;
+  width: 90%;
+ padding-left: 10%;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  background: #343F4F;
+}
+body {
+    background-color: #fbfbfb;
+  }
+  @media (min-width: 991.98px) {
+    main {
+      padding-left: 240px;
+    }
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0; /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 240px;
+    z-index: 600;
+  }
+  
+  @media (max-width: 991.98px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  .sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+
+ 
+ 
+.wrapper{
+  padding: 20px;
+  height: 50px;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFF;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.wrapper span{
+  /* width: 100%; */
+  width: 60px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+.num{
+    text-align: center;
+  font-size: 25px;
+ 
+  /* border-right: 2px solid rgba(0,0,0,0.2);
+  border-left: 2px solid rgba(0,0,0,0.2); */
+  pointer-events: none;
+  width: 45px;
+  border: none;
+}
+.wrapper input{
+    /* font-family: 'Poppins'; */
+    font-weight: bold;
+    border-right: 2px solid rgba(0,0,0,0.2);
+border-left: 2px solid rgba(0,0,0,0.2);
+}
+
+.cnt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.add{
+
+    display: flex;
+    align-items: center;
+}
